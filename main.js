@@ -11,7 +11,7 @@ $(document).ready(function(){
             nxturl = this.dataset.url;
             this.style.display = "none";
         } else {
-            nxturl = "https://api.instagram.com/v1/users/self/media/recent/?access_token="+access_token+"&count="+photo_count+";
+            nxturl = "https://api.instagram.com/v1/users/self/media/recent/?access_token="+access_token+"&count="+photo_count;
         }
         $.ajax({
               method: "GET",
