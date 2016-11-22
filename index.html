@@ -1,0 +1,86 @@
+ <!doctype html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>Instagram Feed Demo</title>
+
+     <!--  Boostrap 3.3.7 CDN -->
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+      <!--  Blueimg Gallery -->
+     <link rel="stylesheet" href="blueimp/css/blueimp-gallery.css">
+
+
+      <!--  ION icon 2.0.1 CDN -->
+     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+     <style>
+        .insta-block{
+            position:relative;
+            display: block;
+            margin-bottom:30px;
+        }
+        .insta-block .img-responsive{
+            width:100%;
+            max-width:100%;
+        }
+        .insta-info {
+            position: absolute;
+            top: 0;
+            left: 15px;
+            right: 15px;
+            margin: auto;
+            color: white;
+            display: block;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 15px;
+            opacity:0;
+            transition:opacity .3s;
+        }
+        .insta-block:hover .insta-info{
+            opacity:1;
+        }
+        .ion-android-favorite-outline {
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+    </style>
+ </head>
+ <body>
+     <div class="container">
+
+        <!-- instagram_feed is container for your Instagram feed -->
+         <div id="instagram_feed"></div>
+
+	 </div>
+
+    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+     <!--  Blueimp Gallery -->
+    <script src="blueimp/js/blueimp-helper.js"></script>
+    <script src="blueimp/js/blueimp-gallery.js"></script>
+    <script src="blueimp/js/blueimp-gallery-fullscreen.js"></script>
+    <script src="blueimp/js/blueimp-gallery-indicator.js"></script>
+
+     <!-- jQuery 1.12.4 -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
+
+    <!--  Boostrap 3.3.7 CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="blueimp/js/jquery.blueimp-gallery.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
