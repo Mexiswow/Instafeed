@@ -1,5 +1,6 @@
 # Instafeed
 Instagram Feed Gallery (jQuery/Boostrap 3.x/Blueimg Gallery)
+demo: https://mexiswow.github.io/Instafeed/index.html
 
 ##in file main.js change settings
 
